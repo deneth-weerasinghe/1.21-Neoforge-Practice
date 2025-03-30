@@ -53,10 +53,16 @@ public class PracticeMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.ORB);
+            event.accept(ModItems.MYSTERIOUS_CRYSTAL);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.ORB_BLOCK);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.MYSTERIOUS_CRYSTAL_ORE);
+            event.accept(ModBlocks.LUSTER_STONE);
         }
     }
 

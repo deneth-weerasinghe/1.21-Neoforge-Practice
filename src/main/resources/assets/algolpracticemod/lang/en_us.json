@@ -1,5 +1,8 @@
 {
   "item.algolpracticemod.orb": "Orb",
-  
-  "block.algolpracticemod.orb_block": "Block of Orb"
+  "item.algolpracticemod.mysterious_crystal": "Mysterious Crystal",
+
+  "block.algolpracticemod.orb_block": "Block of Orb",
+  "block.algolpracticemod.luster_stone": "Lustrous Stone",
+  "block.algolpracticemod.mysterious_crystal_ore": "Mysterious Crystal Ore"
 }
