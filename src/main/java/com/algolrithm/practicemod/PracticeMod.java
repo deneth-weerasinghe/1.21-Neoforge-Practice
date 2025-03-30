@@ -1,6 +1,7 @@
 package com.algolrithm.practicemod;
 
 import com.algolrithm.practicemod.blocks.ModBlocks;
+import com.algolrithm.practicemod.item.ModCreativeModeTabs;
 import com.algolrithm.practicemod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -36,6 +37,8 @@ public class PracticeMod {
 
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);

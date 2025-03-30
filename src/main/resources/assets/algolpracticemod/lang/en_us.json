@@ -4,5 +4,8 @@
 
   "block.algolpracticemod.orb_block": "Block of Orb",
   "block.algolpracticemod.luster_stone": "Lustrous Stone",
-  "block.algolpracticemod.mysterious_crystal_ore": "Mysterious Crystal Ore"
+  "block.algolpracticemod.mysterious_crystal_ore": "Mysterious Crystal Ore",
+
+  "creativetab.algolpracticemod.crystal_blocks": "Crystal Blocks",
+  "creativetab.algolpracticemod.crystal_items": "Crystal Items"
 }
