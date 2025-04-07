@@ -57,6 +57,7 @@ public class PracticeMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.ORB);
             event.accept(ModItems.MYSTERIOUS_CRYSTAL);
+            event.accept(ModItems.UNREFINED_ORB);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {

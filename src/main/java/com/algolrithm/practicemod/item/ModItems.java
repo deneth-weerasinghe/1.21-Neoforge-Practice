@@ -15,6 +15,9 @@ public class ModItems {
     public static final DeferredItem<Item> MYSTERIOUS_CRYSTAL = ITEMS.register("mysterious_crystal",
             () -> new Item(new Item.Properties())
     );
+    public static final DeferredItem<Item> UNREFINED_ORB = ITEMS.register("unrefined_orb",
+            () -> new Item(new Item.Properties())
+    );
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

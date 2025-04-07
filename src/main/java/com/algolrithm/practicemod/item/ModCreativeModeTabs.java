@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.ORB);
                         output.accept(ModItems.MYSTERIOUS_CRYSTAL);
+                        output.accept(ModItems.UNREFINED_ORB);
                     })
                     .build()
     );
