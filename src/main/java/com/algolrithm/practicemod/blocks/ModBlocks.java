@@ -2,9 +2,11 @@ package com.algolrithm.practicemod.blocks;
 
 import com.algolrithm.practicemod.PracticeMod;
 import com.algolrithm.practicemod.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -26,7 +28,9 @@ public class ModBlocks {
             ));
 
     public static final DeferredBlock<Block> MYSTERIOUS_CRYSTAL_ORE = registerBlock("mysterious_crystal_ore",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new DropExperienceBlock(
+                    UniformInt.of(3, 7),
+                    BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_GRAY)
                     .strength(1.5F)
                     .sound(SoundType.STONE)
