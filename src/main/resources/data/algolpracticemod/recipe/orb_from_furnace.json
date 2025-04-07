@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 3.0,
+  "group": "orb",
+  "ingredient": {
+    "item": "algolpracticemod:unrefined_orb"
+  },
+  "result": {
+    "count": 1,
+    "id": "algolpracticemod:orb"
+  }
+}

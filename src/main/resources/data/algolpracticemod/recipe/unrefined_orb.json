@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "unrefined_orb",
+  "ingredients": [
+    {
+      "item": "algolpracticemod:mysterious_crystal"
+    },
+    {
+      "item": "algolpracticemod:mysterious_crystal"
+    },
+    {
+      "item": "algolpracticemod:mysterious_crystal"
+    },
+    {
+      "item": "algolpracticemod:mysterious_crystal"
+    },
+    {
+      "item": "algolpracticemod:luster_stone"
+    },
+    {
+      "item": "algolpracticemod:luster_stone"
+    },
+    {
+      "item": "algolpracticemod:luster_stone"
+    },
+    {
+      "item": "algolpracticemod:luster_stone"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "algolpracticemod:unrefined_orb"
+  }
+}
