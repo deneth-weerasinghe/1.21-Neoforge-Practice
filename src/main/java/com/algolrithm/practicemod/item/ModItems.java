@@ -18,6 +18,9 @@ public class ModItems {
     public static final DeferredItem<Item> UNREFINED_ORB = ITEMS.register("unrefined_orb",
             () -> new Item(new Item.Properties())
     );
+    public static final DeferredItem<Item> CHISEL_WAND = ITEMS.register("chisel_wand",
+            () -> new ChiselItem(new Item.Properties().durability(2048))
+    );
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

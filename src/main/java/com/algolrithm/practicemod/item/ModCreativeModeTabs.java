@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ORB);
                         output.accept(ModItems.MYSTERIOUS_CRYSTAL);
                         output.accept(ModItems.UNREFINED_ORB);
+                        output.accept(ModItems.CHISEL_WAND);
                     })
                     .build()
     );
