@@ -1,0 +1,9 @@
+{
+  "values": [
+    "algolpracticemod:chisel_wand",
+    {
+      "id": "#forge:tools",
+      "required": false
+    }
+  ]
+}

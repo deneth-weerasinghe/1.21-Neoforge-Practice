@@ -1,0 +1,9 @@
+{
+  "values": [
+    "algolpracticemod:mysterious_crystal_ore",
+    {
+      "id": "#forge:ores_in_ground/stone",
+      "required": false
+    }
+  ]
+}
