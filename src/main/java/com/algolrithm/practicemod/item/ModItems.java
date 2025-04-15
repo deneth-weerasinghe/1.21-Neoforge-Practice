@@ -1,6 +1,7 @@
 package com.algolrithm.practicemod.item;
 
 import com.algolrithm.practicemod.PracticeMod;
+import com.algolrithm.practicemod.item.custom.ChiselItem;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
