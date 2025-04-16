@@ -1,6 +1,7 @@
 package com.algolrithm.practicemod.blocks;
 
 import com.algolrithm.practicemod.PracticeMod;
+import com.algolrithm.practicemod.blocks.custom.TransmuteBlock;
 import com.algolrithm.practicemod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -40,6 +41,13 @@ public class ModBlocks {
     public static final DeferredBlock<Block> LUSTER_STONE = registerBlock("luster_stone",
             () -> new Block(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_LIGHT_BLUE)
+                    .strength(1.5F)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()
+            ));
+
+    public static final DeferredBlock<Block> TRANSMUTATION_SURFACE = registerBlock("transmutation_surface",
+            () -> new TransmuteBlock(BlockBehaviour.Properties.of()
                     .strength(1.5F)
                     .sound(SoundType.STONE)
                     .requiresCorrectToolForDrops()

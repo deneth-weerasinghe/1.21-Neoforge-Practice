@@ -38,6 +38,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LUSTER_STONE);
                         output.accept(ModBlocks.MYSTERIOUS_CRYSTAL_ORE);
                         output.accept(ModBlocks.ORB_BLOCK);
+                        output.accept(ModBlocks.TRANSMUTATION_SURFACE);
                     })
                     .build()
     );
