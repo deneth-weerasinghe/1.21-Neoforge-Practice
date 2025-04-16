@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MYSTERIOUS_CRYSTAL);
                         output.accept(ModItems.UNREFINED_ORB);
                         output.accept(ModItems.CHISEL_WAND);
+                        output.accept(ModItems.GEM_APPLE);
                     })
                     .build()
     );

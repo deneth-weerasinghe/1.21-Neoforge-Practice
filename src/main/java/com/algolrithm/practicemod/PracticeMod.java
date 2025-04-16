@@ -68,6 +68,10 @@ public class PracticeMod {
             event.accept(ModBlocks.MYSTERIOUS_CRYSTAL_ORE);
             event.accept(ModBlocks.LUSTER_STONE);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.GEM_APPLE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

@@ -16,7 +16,7 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(PracticeMod.MOD_ID);
 
     public static final DeferredItem<Item> ORB = ITEMS.register("orb",
-            () -> new Item(new Item.Properties())
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE))
     );
     public static final DeferredItem<Item> MYSTERIOUS_CRYSTAL = ITEMS.register("mysterious_crystal",
             () -> new Item(new Item.Properties())
@@ -25,14 +25,12 @@ public class ModItems {
             () -> new Item(new Item.Properties())
     );
     public static final DeferredItem<Item> CHISEL_WAND = ITEMS.register("chisel_wand",
-            () -> new ChiselItem(
-                    new Item.Properties()
-                            .rarity(Rarity.RARE)
-                            .durability(2048)
-                            .component(DataComponents.TOOL,
-                                    new Tool(List.of(), 1.0F, 2))
+            () -> new ChiselItem(new Item.Properties().rarity(Rarity.RARE).durability(2048)
+                    .component(DataComponents.TOOL, new Tool(List.of(), 1.0F, 2))
             )
     );
+    public static final DeferredItem<Item> GEM_APPLE = ITEMS.register("gem_apple",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(ModFoodProperties.GEM_APPLE)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
