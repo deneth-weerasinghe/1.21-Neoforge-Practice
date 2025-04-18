@@ -1,9 +1,0 @@
-{
-  "values": [
-    "algolpracticemod:luster_stone",
-    {
-      "id": "#forge:stone",
-      "required": false
-    }
-  ]
-}

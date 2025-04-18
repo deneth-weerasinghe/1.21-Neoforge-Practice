@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gem_apple": {
+      "conditions": {
+        "items": [
+          {
+            "items": "algolpracticemod:gem_apple"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "algolpracticemod:gem_apple"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gem_apple"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "algolpracticemod:gem_apple"
+    ]
+  }
+}

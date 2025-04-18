@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chisel_wand": {
+      "conditions": {
+        "items": [
+          {
+            "items": "algolpracticemod:chisel_wand"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "algolpracticemod:chisel_wand"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chisel_wand"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "algolpracticemod:chisel_wand"
+    ]
+  }
+}

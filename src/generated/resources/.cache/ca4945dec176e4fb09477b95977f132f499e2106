@@ -1,0 +1,7 @@
+// 1.21.1	2025-04-18T22:05:11.3887206	Tags for minecraft:block mod id algolpracticemod
+4a50b9f8dcdbecb6d6be3d3b5172c36d54494adb data/minecraft/tags/block/base_stone_overworld.json
+04c4a1bfec9dd15af5fa13daa27ecb43ec22795f data/minecraft/tags/block/mineable/pickaxe.json
+d565e3ac50842862bf9c69760075281d4df6cd12 data/minecraft/tags/block/needs_diamond_tool.json
+96d8ebaa9204bc7a8e066ccaf6dbb2520a92f8d4 data/minecraft/tags/block/needs_iron_tool.json
+4a50b9f8dcdbecb6d6be3d3b5172c36d54494adb data/minecraft/tags/block/overworld_carver_replaceables.json
+4a50b9f8dcdbecb6d6be3d3b5172c36d54494adb data/minecraft/tags/block/stone_ore_replaceables.json

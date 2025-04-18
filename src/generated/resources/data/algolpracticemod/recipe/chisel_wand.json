@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:breeze_rod"
+    },
+    "X": {
+      "item": "algolpracticemod:orb"
+    }
+  },
+  "pattern": [
+    "  X",
+    " # ",
+    "#  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "algolpracticemod:chisel_wand"
+  }
+}

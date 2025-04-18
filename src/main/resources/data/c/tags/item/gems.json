@@ -1,9 +1,0 @@
-{
-  "values": [
-    "algolpracticemod:orb",
-    {
-      "id": "#forge:gems",
-      "required": false
-    }
-  ]
-}

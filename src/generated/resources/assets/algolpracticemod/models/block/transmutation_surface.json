@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_top",
+  "textures": {
+    "side": "algolpracticemod:block/transmutation_surface",
+    "top": "algolpracticemod:block/transmutation_surface_top"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "algolpracticemod:unrefined_orb"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_unrefined_orb": {
+      "conditions": {
+        "items": [
+          {
+            "items": "algolpracticemod:unrefined_orb"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_unrefined_orb"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "algolpracticemod:unrefined_orb"
+    ]
+  }
+}
