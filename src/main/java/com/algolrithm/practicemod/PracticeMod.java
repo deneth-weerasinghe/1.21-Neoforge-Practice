@@ -1,9 +1,12 @@
 package com.algolrithm.practicemod;
 
 import com.algolrithm.practicemod.blocks.ModBlocks;
+import com.algolrithm.practicemod.client.HUDMagicCircleHandler;
 import com.algolrithm.practicemod.item.ModCreativeModeTabs;
 import com.algolrithm.practicemod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.neoforged.fml.loading.FMLEnvironment;
+import net.neoforged.neoforge.client.event.RegisterGuiLayersEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -35,6 +38,9 @@ public class PracticeMod {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        if (FMLEnvironment.dist.isClient()) {
+            modEventBus.addListener(this::onRegisterHUDHandler);
+        }
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
@@ -85,5 +91,9 @@ public class PracticeMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
         }
+    }
+
+    private void onRegisterHUDHandler(final RegisterGuiLayersEvent event) {
+        HUDMagicCircleHandler.register(event);
     }
 }
