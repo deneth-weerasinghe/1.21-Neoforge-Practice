@@ -7,6 +7,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.LayeredDraw;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
@@ -69,7 +70,9 @@ public class HUDHandler {
             int y = top - 49;
 
             HUDRenderEvent.ManaBar manaBarEvent = new HUDRenderEvent.ManaBar(mana, x, y, guiGraphics);
-
+            if (player.getVehicle() instanceof LivingEntity) {
+                manaBarEvent.setCanceled(true);
+            }
             if (!manaBarEvent.isCanceled()) NeoForge.EVENT_BUS.post(manaBarEvent);
             if (manaBarEvent.isCanceled()) return;
 
