@@ -1,7 +1,7 @@
 package com.algolrithm.practicemod;
 
 import com.algolrithm.practicemod.blocks.ModBlocks;
-import com.algolrithm.practicemod.client.HUDMagicCircleHandler;
+import com.algolrithm.practicemod.client.HUDHandler;
 import com.algolrithm.practicemod.item.ModCreativeModeTabs;
 import com.algolrithm.practicemod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -94,6 +94,6 @@ public class PracticeMod {
     }
 
     private void onRegisterHUDHandler(final RegisterGuiLayersEvent event) {
-        HUDMagicCircleHandler.register(event);
+        HUDHandler.register(event);
     }
 }
