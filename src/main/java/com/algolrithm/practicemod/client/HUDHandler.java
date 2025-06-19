@@ -76,6 +76,8 @@ public class HUDHandler {
             if (!manaBarEvent.isCanceled()) NeoForge.EVENT_BUS.post(manaBarEvent);
             if (manaBarEvent.isCanceled()) return;
 
+            mc.gui.rightHeight += 10;
+
 
             drawManaBar(manaBarEvent, player);
         }
